@@ -10,9 +10,10 @@ import java.util.Iterator;
 
 public class MyArrayList<E> implements MyCollection<E> {
     private E[] values;
+    private final int DEFAULT_CAPACITY = 10;
 
     public MyArrayList() {
-        values = (E[]) new Object[0];
+        values = (E[]) new Object[DEFAULT_CAPACITY];
     }
 
     @Override
